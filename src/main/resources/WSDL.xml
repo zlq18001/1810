@@ -1,0 +1,28 @@
+WSDL 网络服务描述语言 Web Service Secription Language
+WSDL 文档主要结构
+<definitions>
+
+    <types>
+        web service 使用的数据类型
+    </types>
+
+    <message name="getTermRequest">
+        <!--web service 使用的消息-->
+        <part name="term" type="xs:string"/>
+    </message>
+    <message name="getTermResponse">
+        <part name="value" type="xs:string"/>
+    </message>
+
+    <portType name="glossaryTerms">
+        <!--web service 执行的操作-->
+        <operation name="getTerm">
+            <input message="getTermRequest"/>
+            <output messagr="getTermResponse">
+        </operation>
+    </portType>
+
+    <blnding>
+        web service 使用放入通信协议
+    </blnding>
+</definitions>

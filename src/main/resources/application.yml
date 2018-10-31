@@ -1,0 +1,7 @@
+server:
+  port: 8888
+
+mybatis:
+  mapper-locations: classpath:config/mweb/sql_*.xml
+  config-location: classpath:config/setting/mybatis_config.xml
+  type-aliases-package: com.linux.huhx.learn.mybatis.bean
