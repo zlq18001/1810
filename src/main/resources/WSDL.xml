@@ -3,11 +3,11 @@ WSDL 文档主要结构
 <definitions>
 
     <types>
-        web service 使用的数据类型
+        web zlq.world.service 使用的数据类型
     </types>
 
     <message name="getTermRequest">
-        <!--web service 使用的消息-->
+        <!--web zlq.world.service 使用的消息-->
         <part name="term" type="xs:string"/>
     </message>
     <message name="getTermResponse">
@@ -15,7 +15,7 @@ WSDL 文档主要结构
     </message>
 
     <portType name="glossaryTerms">
-        <!--web service 执行的操作-->
+        <!--web zlq.world.service 执行的操作-->
         <operation name="getTerm">
             <input message="getTermRequest"/>
             <output messagr="getTermResponse">
@@ -23,6 +23,6 @@ WSDL 文档主要结构
     </portType>
 
     <blnding>
-        web service 使用放入通信协议
+        web zlq.world.service 使用放入通信协议
     </blnding>
 </definitions>
